@@ -1,7 +1,7 @@
 {
     "jobs":[],
     "formvalidation": true,
-    "enablepreview": false,
+    "enablepreview": true,
     "ocr": "d4_ocr",
     "testmode": false
 }
