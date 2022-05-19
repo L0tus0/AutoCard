@@ -7,8 +7,8 @@ on:
     branches: [ main ]
     
   schedule:
-    # UTC 01:00 和 UTC 04:00
-    - cron: '0 1,4 * * *'
+    # UTC+8 08:00 和 01:00
+    - cron: '0 0,17 * * *'
   
   # 当star当前仓库时立即执行
   watch:
@@ -32,7 +32,7 @@ jobs:
           upstream_sync_repo: GCS-ZHN/AutoCard
           upstream_sync_branch: main
           target_sync_branch: main
-          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+          target_repo_token: ${{ secrets.MY_TOKEN }}
           upstream_pull_args: '-s recursive -Xtheirs'
 
       # 安装java环境
